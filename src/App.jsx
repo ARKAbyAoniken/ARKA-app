@@ -1,6 +1,29 @@
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import {
+function Card({ children, className = "" }) {
+  return <div className={className}>{children}</div>;
+}
+
+function CardContent({ children, className = "" }) {
+  return <div className={className}>{children}</div>;
+}
+
+function Button({ children, className = "", ...props }) {
+  return (
+    <button className={className} {...props}>
+      {children}
+    </button>
+  );
+}
+
+function Input({ className = "", ...props }) {
+  return (
+    <input
+      className={className}
+      {...props}
+    />
+  );
+}
   BarChart3,
   ClipboardList,
   Download,
@@ -19,9 +42,6 @@ import {
   Save,
   X,
 } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 const STOCKTAKE_DATE = "22.05.2026";
 const NL = String.fromCharCode(10);
