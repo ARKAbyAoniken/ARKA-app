@@ -17,9 +17,7 @@ function Button({ children, className = "", ...props }) {
 }
 
 function Input({ className = "", ...props }) {
-  return (
-    <input
-      className={className}
+
       {...props}
     />
   );
