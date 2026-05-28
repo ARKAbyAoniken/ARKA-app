@@ -1,5 +1,24 @@
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import {
+  BarChart3,
+  ClipboardList,
+  Download,
+  FileSpreadsheet,
+  Package,
+  Plus,
+  Search,
+  Sparkles,
+  Trash2,
+  Upload,
+  Users,
+  Utensils,
+  WalletCards,
+  Scale,
+  Pencil,
+  Save,
+  X,
+} from "lucide-react";
 function Card({ children, className = "" }) {
   return <div className={className}>{children}</div>;
 }
@@ -22,24 +41,7 @@ function Input({ className = "", ...props }) {
     />
   );
 }
-  BarChart3,
-  ClipboardList,
-  Download,
-  FileSpreadsheet,
-  Package,
-  Plus,
-  Search,
-  Sparkles,
-  Trash2,
-  Upload,
-  Users,
-  Utensils,
-  WalletCards,
-  Scale,
-  Pencil,
-  Save,
-  X,
-} from "lucide-react";
+
 
 const STOCKTAKE_DATE = "22.05.2026";
 const NL = String.fromCharCode(10);
