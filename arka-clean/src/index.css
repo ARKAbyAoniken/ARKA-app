@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, Arial, sans-serif; background: #090c0d; color: #f5efe5; }
+button, input { font: inherit; }
+.topbar { position: sticky; top: 0; z-index: 10; background: #0d1112; border-bottom: 1px solid rgba(255,255,255,.1); padding: 16px; display: flex; gap: 18px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.brand { display: flex; gap: 12px; align-items: center; }
+.logo { width: 42px; height: 42px; border-radius: 12px; border: 2px solid #ead5b3; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+h1 { margin: 0; letter-spacing: .25em; font-size: 22px; }
+small { color: rgba(255,255,255,.6); display: block; margin-top: 4px; }
+nav { display: flex; gap: 8px; flex-wrap: wrap; }
+nav button, .switch button { border: 0; border-radius: 12px; padding: 10px 12px; background: rgba(255,255,255,.08); color: #fff; cursor: pointer; }
+nav button.active, .switch button.active, .primary { background: #ead5b3; color: #120e08; font-weight: 800; }
+main { max-width: 1280px; margin: 0 auto; padding: 22px; }
+h2 { font-size: 32px; margin: 0 0 18px; }
+input { width: 100%; margin-bottom: 14px; padding: 13px 14px; border-radius: 14px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: #fff; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 14px; }
+.card, .panel, .recipe, .row { background: #15191a; border: 1px solid rgba(255,255,255,.1); border-radius: 18px; padding: 16px; }
+.card span { color: rgba(255,255,255,.6); display:block; margin-bottom: 8px; }
+.card strong { font-size: 28px; }
+.list { display: grid; gap: 10px; }
+.row { display: grid; grid-template-columns: 1.4fr .5fr .5fr auto; gap: 12px; align-items: center; }
+.row b { display:block; }
+.recipe h3 { margin: 0 0 6px; }
+.recipe p { margin: 0 0 8px; color: rgba(255,255,255,.75); }
+.counter { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+.counter button { width: 42px; height: 42px; border: 0; border-radius: 12px; background: rgba(255,255,255,.1); color: #fff; font-size: 22px; cursor: pointer; }
+.counter button:last-child { background: #ead5b3; color: #120e08; font-weight: 900; }
+.counter strong { min-width: 64px; height: 42px; display:flex; align-items:center; justify-content:center; border-radius:12px; background:#ead5b3; color:#120e08; }
+.primary { border: 0; border-radius: 12px; padding: 12px 16px; cursor: pointer; margin-top: 12px; }
+.switch { display: flex; gap: 8px; margin-bottom: 14px; }
+.panel { margin-top: 16px; }
+@media (max-width: 850px) { .row { grid-template-columns: 1fr; } .counter { justify-content: flex-start; } .topbar { align-items: flex-start; } nav { width: 100%; } nav button { flex: 1 1 30%; } }
